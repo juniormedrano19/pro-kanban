@@ -8,7 +8,6 @@
 - [Screenshots](#screenshots)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [Additional Notes](#additional-notes)
 
 ### Prerequisites
@@ -72,10 +71,7 @@ Here are some screenshots of the application:
 ![Task Management](https://res.cloudinary.com/devs4/image/upload/v1729724001/pro-kanban/776shots_so_kw1gyc.png)
 
 
-To add more screenshots:
-1. Save your images in a project directory (e.g., `/screenshots` or `/assets`)
-2. Reference them using markdown image syntax: `![Alt Text](/path/to/image.png)`
-3. Add descriptive alt text for accessibility
+
 
 ### Project Structure
 ```
@@ -112,5 +108,5 @@ pro-kanban/
 - The client runs on port 5173
 - Make sure to have both services (client and server) running simultaneously for proper application functionality
 - For any issues or bug reports, please create an issue in the repository
-- [Add any other important notes]
+
 
