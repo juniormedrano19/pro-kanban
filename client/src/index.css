@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.todo__wrapper,
+.inprogress__wrapper,
+.done__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  
+}
+.todo__wrapper > h3,
+.inprogress__wrapper > h3,
+.done__wrapper > h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.todo__items {
+  background-color: #eee3cb;
+}
+.inprogress__items {
+  background-color: #d2daff;
+}
+.done__items {
+  background-color: #7fb77e;
+}
+
+.todo__container,
+.inprogress__container,
+.done__container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 14px;
+
+}
+.title__label {
+  padding: 4px 10px;
+  width: fit-content;
+
+  border-radius: 4px;
+}
+.todo__label {
+  background: #ff9f43;
+  color: #fff;
+}
+.inprogress__label {
+  background: #0abde3;
+  color: #fff;
+}
+.done__label {
+  background: #188544;
+  color: #fff;
+}
+.title__label > h3 {
+  font-size: 14px;
+  line-height: 16px;
+}
+.group__container {
+  display: flex;
+  gap: 10px;
+
+}
+.group__container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+.group__tasks {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between  ;
+
+}
+.group__tasks>div{
+
+min-height: 20px;
+}
+.group__tasks > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.todo__container {
+  background: #fff3e5;
+}
+.inprogress__container {
+  background: #effaff;
+}
+.done__container {
+  background: #edf9e8;
+}
+.todo__items,
+.inprogress__items,
+.done__items {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+}

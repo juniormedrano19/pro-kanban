@@ -1,0 +1,44 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotateBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .loading {
+    border-radius: 50%;
+    border-style: solid;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotate 1s linear infinite;
+  }
+  
+  .loading::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+    content: '';
+    margin: auto;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    box-sizing: border-box;
+    transform-origin: center center;
+    animation: rotateBack 0.5s linear infinite;
+  }
+  
